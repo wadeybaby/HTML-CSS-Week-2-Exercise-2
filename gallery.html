@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Image Gallery</h1>
+<!-- Filter buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterimages('all')">All</button>
+            <button class="filter-btn" onclick="filterimages('landscape')">Landscapes</button>
+            <button class="filter-btn" onclick="filterimages('portrait')">Portraits</button>  
+            <button class="filter-btn" onclick="filterimages('architecture')">Architecture</button>             
+        </div>
+
+<!-- Image gallery grid -->
+        <div class="gallery-grid">
+            <div class="image-card landscape">
+                <img src="https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png" alt="Landscape Image">
+                <div class="overlay">
+                    <h3>Mountain View</h3>
+                    <p class="category-tag">Landscape</p>
+                    <p class="description">A beautiful mountain landscape</p>                    
+                </div>
+            </div>
+
+            <div class="image-card portrait">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/210902025018-15-andy-gotts-celebrity-photographer-gallery.jpg?q=w_1600,h_1860,x_0,y_0,c_fill" alt="Portrait Image">
+                <div class="overlay">
+                    <h3>Robin Williams</h3>
+                    <p class="category-tag">Portrait</p>
+                    <p class="description">Portrait of the late Robin Williams</p>
+                </div>
+            </div>
+
+            <div class="image-card architecture">
+                <img src="https://ipt.images.tshiftcdn.com/204046/x/0/12-tips-for-capturing-amazing-city-skylines-1.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Architecture Image">
+                <div class="overlay">
+                    <h3>City Skyline</h3>
+                    <p class="category-tag">Architecture</p>
+                    <p class="description">An immersive city skyline</p>
+                </div>
+            </div>
+
+            <div class="image-card landscape">
+                <img src="https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image8.png" alt="Landscape Image">
+                <div class="overlay">
+                    <h3>Flowing Water</h3>   
+                    <p class="category-tag">Landscape</p>
+                    <p class="description">A beautiful flowing river</p>                    
+                </div>
+            </div>
+
+            <div class="image-card portrait">
+                <img src="https://static01.nyt.com/images/2017/10/17/t-magazine/oakImage-1508274648569/oakImage-1508274648569-jumbo.jpg?quality=75&auto=webp" alt="Portrait Image">
+                <div class="overlay">
+                    <h3>Neil Patrick Harris</h3>
+                    <p class="category-tag">Portrait</p>
+                    <p class="description">Portrait of Neil Patrick Harris</p>
+                </div>
+            </div>
+
+            <div class="image-card architecture">
+                <img src="https://images.stockcake.com/public/0/5/0/05007206-55d5-4243-b754-a86281c63278_large/eiffel-tower-night-stockcake.jpg" alt="Architecture Image">
+                <div class="overlay">
+                    <h3>Eiffel Tower</h3>
+                    <p class="category-tag">Architecture</p>
+                    <p class="description">A beautiful image of the Eiffel Tower at night</p>
+                </div>
+            </div>
+
+            <div class="image-card landscape">
+                <img src="https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image15.png" alt="Landscape Image">
+                <div class="overlay">
+                    <h3>The Desert</h3>
+                    <p class="category-tag">Landscape</p>
+                    <p class="description">The sand runs far like a sea of waves</p>                    
+               </div>
+            </div>
+
+            <div class="image-card portrait">
+                <img src="https://sadanduseless.b-cdn.net/wp-content/uploads/2022/11/celebrity-classic-paintings6.jpg" alt="Portrait Image">
+                <div class="overlay">
+                    <h3>Little Wayne II</h3>
+                    <p class="category-tag">Portrait</p>
+                    <p class="description">Portrait of the great Little Wayne The Second</p>
+                </div>
+            </div>
+
+            <div class="image-card architecture">
+                <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892506/EducationHub/photos/the-great-wall-of-china.jpg" alt="Architecture Image">
+                <div class="overlay">
+                    <h3>The Great Wall of China</h3>
+                    <p class="category-tag">Architecture</p>
+                    <p class="description">The Great Wall of China one of the worlds most notorious structures</p>
+                </div>
+            </div>
+
+            <div class="image-card landscape">
+                <img src="https://media.istockphoto.com/id/1141277826/photo/sunset-in-cabo-san-lucas.webp?a=1&b=1&s=612x612&w=0&k=20&c=DNXg6yTCfhRa-KQvgf72fmu1YPRI_qa73LrjhY2zZYc=" alt="Landscape Image">
+                <div class="overlay">
+                    <h3>Ocean sunset</h3>
+                    <p class="category-tag">Landscape</p>
+                    <p class="description">The sun setting over the ocean, lighting up the water with its fleeting warmth</p>                    
+               </div>
+            </div>
+
+            <div class="image-card portrait">
+                <img src="https://sadanduseless.b-cdn.net/wp-content/uploads/2022/11/celebrity-classic-paintings5.jpg" alt="Portrait Image">
+                <div class="overlay">
+                    <h3>Lady Rihanna Fenty III</h3>
+                    <p class="category-tag">Portrait</p>
+                    <p class="description">Portrait of the beautiful Lady Rihanna Fenty the Third </p>
+                </div>
+            </div>
+
+            <div class="image-card architecture">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/405px-Colosseo_2020.jpg" alt="Architecture Image">
+                <div class="overlay">
+                    <h3>The Colosseum</h3>
+                    <p class="category-tag">Architecture</p>
+                    <p class="description">The Colosseum is an ancient amphitheater in Rome, renowned for its grand architecture and historical significance</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function filterimages(category) {
+                const images = document.querySelectorAll('.image-card');
+                images.forEach(image => {
+                    if (category === 'all' || image.classList.contains(category)) {
+                        image.style.display = 'block';
+                    } else {
+                        image.style.display = 'none';
+                    }
+                });
+        
+                // Update active button style
+                const buttons = document.querySelectorAll('.filter-btn');
+                buttons.forEach(button => button.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+        </script>
+        
+</body>
+</html>
